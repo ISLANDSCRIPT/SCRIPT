@@ -9760,8 +9760,8 @@ Toggle = Tab:CreateToggle({
 
 	local DeposittoBank = BankSelection:AddInput("DeposittoBank", {
 		Title = "Deposit to Bank",
-		Default = "0",
-		Placeholder = "0",
+		Default = "10000000000",
+		Placeholder = "010000000",
 		Numeric = true, -- Only allows numbers
 		Finished = true, -- Only calls callback when you press enter
 		Callback = function(Value)
@@ -9771,7 +9771,7 @@ Toggle = Tab:CreateToggle({
 					[1] = {
 						["accountType"] = "PERSONAL",
 						["transferType"] = "DEPOSIT",
-						["amount"] = tonumber(Value)
+						["amount"] = tonumber(2332321)
 					}
 				}
 			}
@@ -9782,8 +9782,8 @@ Toggle = Tab:CreateToggle({
 
 	local WithdrawFromBank = BankSelection:AddInput("WithdrawFromBank", {
 		Title = "Withdraw From Bank",
-		Default = "0",
-		Placeholder = "0",
+		Default = "3332222",
+		Placeholder = "33333333",
 		Numeric = true, -- Only allows numbers
 		Finished = true, -- Only calls callback when you press enter
 		Callback = function(Value)
@@ -9805,6 +9805,19 @@ Toggle = Tab:CreateToggle({
 	local ScriptSettingsSelection = Tabs.Settings:AddSection("Script Settings")
 
 
+
+	local TeleportMethod = ScriptSettingsSelection:AddDropdown("TeleportMethod", {
+		Title = "Teleport Method",
+		Values = {"Tween","TweenV3", "MiniTp", "Instant", "Pathfinding", "PathfindingV2"},
+		Multi = false,
+		Default = 1,
+	})
+	local TeleportMethod = ScriptSettingsSelection:AddDropdown("TeleportMethod", {
+		Title = "Teleport Method",
+		Values = {"Tween","TweenV3", "MiniTp", "Instant", "Pathfinding", "PathfindingV2"},
+		Multi = false,
+		Default = 1,
+	})
 	local TeleportMethod = ScriptSettingsSelection:AddDropdown("TeleportMethod", {
 		Title = "Teleport Method",
 		Values = {"Tween","TweenV3", "MiniTp", "Instant", "Pathfinding", "PathfindingV2"},
@@ -10543,6 +10556,14 @@ game.Players.LocalPlayer:Kick("SCRIPT IS BROKE! WE ARE SORRY. Reload the script 
 
 
 	-- end
+
+
+
+
+
+
+
+
 
 
 
