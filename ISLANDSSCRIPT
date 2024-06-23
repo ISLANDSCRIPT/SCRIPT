@@ -1,7 +1,7 @@
-print("MADE BY KYLE")
+print("Made by flaxy")
 warn("W SCRIPT")
 for i = 1, 50 do
-  print("Kyle on top | https://github.com/ISLANDSCRIPT/ISLANDSSCRIPT/blob/main/SCRIPT")
+  print("Made by flaxy | ")
 end
 -- This is a pretty old script so dont joke abt the source type (its older than 90% of Roblox comminity) --
 
@@ -11,21 +11,10 @@ repeat wait() until game:IsLoaded()
 
 
 
-game.Players.LocalPlayer:Kick(string.upper("Script Updated get new script at discord https://discord.gg/Y3HSD6uP"))
-
-
-
-
-
-
-
-
-
-
 
 local IsPremium = true 
 local DidKey = false
-local ScriptVersion = "TEST VERS"
+local ScriptVersion = "VERSION 5"
 
 
 local Welcometo = "Welcome to this script hub thanks for testing"
@@ -69,7 +58,7 @@ end
 
 SendNotification("Welcome!", "Welcome to "..FileName .. " " .. ScriptVersion.."!")
 
-local PremiumText1 = "Premium is only 2$ Lifetime. Go buy it in discord.gg/MbsxuDEzgT"
+local PremiumText1 = "WelcomeT"
 
 if isfolder(FileName) then
 
@@ -2109,7 +2098,7 @@ else
 		BypassFun = Window:AddTab({ Title = "Bypass.Fun", Icon = "server" }),
 		Other = Window:AddTab({ Title = "Other", Icon = "sidebar" }),
 		Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
-		DeveloperTab = Window:AddTab({ Title = "Dev", Icon = "" }),
+		DeveloperTab = Window:AddTab({ Title = "Developer", Icon = "settings" }),
 	}
 end 
 
@@ -9829,15 +9818,9 @@ Toggle = Tab:CreateToggle({
 		Default = 1,
 	})
 	local TeleportMethod = ScriptSettingsSelection:AddDropdown("TeleportMethod", {
-		Title = "Teleport Method",
-		Values = {"Tween","TweenV3", "MiniTp", "Instant", "Pathfinding", "PathfindingV2"},
-		Multi = false,
-		Default = 1,
-	})
-	local TeleportMethod = ScriptSettingsSelection:AddDropdown("TeleportMethod", {
-		Title = "Teleport Method",
-		Values = {"Tween","TweenV3", "MiniTp", "Instant", "Pathfinding", "PathfindingV2"},
-		Multi = false,
+		Title = "Dupe Items",
+		Values = {"700 steel rods","Nothing", "52 fertiliser", "Nothing", "Nothing", "Nothing" "Nothing", "Nothing",},
+		Multi = true,
 		Default = 1,
 	})
 
